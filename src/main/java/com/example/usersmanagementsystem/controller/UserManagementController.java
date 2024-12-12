@@ -22,7 +22,7 @@ public class UserManagementController {
     @PostMapping("/auth/register")
     public ResponseEntity<String> regeister(@RequestBody ReqRes reg){
     	  if (usersManagementService.isEmailAlreadyRegistered(reg.getEmail())) {
-    		  System.out.println(new ResponseStatusException(HttpStatus.CONFLICT, "Email is already registered"));
+    		  System.out.println(new ResponseStatusException(HttpStatus.CONFLICT, "Email is already registered !!!"));
               throw new ResponseStatusException(HttpStatus.CONFLICT, "Email is already registered");
               
           }else {
