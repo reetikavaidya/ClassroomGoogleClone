@@ -28,7 +28,7 @@ public class UserManagementController {
           }else {
         	  
         	  usersManagementService.register(reg);
-        	  return ResponseEntity.ok("User registered successfully aniket");
+        	  return ResponseEntity.ok("User registered successfully ");
           }
     	
 //    	 try {
